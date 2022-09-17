@@ -1,0 +1,19 @@
+.modale-event{
+    width:720px;
+    height:500px;
+    margin-left:20%;
+    margin-top: 5%;
+}
+.head-event{
+    background-color:rgb(0, 133, 241);
+    color: white;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+}
