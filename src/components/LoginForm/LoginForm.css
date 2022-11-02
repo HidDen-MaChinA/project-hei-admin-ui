@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input, button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb;
+}
+
+form {
+    display: block;
+    position: relative;
+
+}
+
+form:after{
+    content: '';
+    display:block ;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #d8a227,#d8a227 );
+}
+
+form .form-inner{
+    position: relative;
+    display: block;
+    background-color: #fbfbfb;
+    padding: 20px;
+    z-index: 2;
+}
+
+form .form-inner h2{
+    color: #d8a227;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.form-inner .form-group{
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.form-inner .form-group label{
+    display: block;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.form-inner .form-group:focus-within label{
+    color: #d8a227;
+}
+
+.form-inner .form-group input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #e2e2e2;
+    border-radius: 8px ;
+    transition: 0.5s;
+}
+
+form .form-inner .form-group input:focus{
+    box-shadow: 0px 0px 3px black;
+}
+
+.form-inner input[type="submit"]{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #d8a227,#d8a227 );
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.5s;
+    color: #fbfbfb;
+    font-weight: 600;
+    cursor: pointer;
+}
+
